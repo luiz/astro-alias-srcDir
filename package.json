@@ -12,6 +12,7 @@
   },
   "dependencies": {
     "@astrojs/node": "^4.0.0",
+    "@astrojs/vercel": "^2.4.0",
     "@astrojs/vue": "^1.2.2",
     "astro": "^1.9.1",
     "vue": "^3.2.45"

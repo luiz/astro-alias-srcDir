@@ -3,10 +3,10 @@ import { fileURLToPath } from 'node:url';
 import { dirname, join } from 'node:path';
 
 // https://astro.build/config
-import node from "@astrojs/node";
+import vue from "@astrojs/vue";
 
 // https://astro.build/config
-import vue from "@astrojs/vue";
+import vercel from "@astrojs/vercel/serverless";
 
 // https://astro.build/config
 export default defineConfig({
@@ -19,8 +19,6 @@ export default defineConfig({
       }
     }
   },
-  adapter: node({
-    mode: 'standalone'
-  }),
-  integrations: [vue()]
+  integrations: [vue()],
+  adapter: vercel()
 });
