@@ -6,9 +6,6 @@ import { dirname, join } from 'node:path';
 import node from "@astrojs/node";
 
 // https://astro.build/config
-import svelte from "@astrojs/svelte";
-
-// https://astro.build/config
 export default defineConfig({
   output: 'server',
   srcDir: './src/main',
@@ -20,7 +17,6 @@ export default defineConfig({
     }
   },
   adapter: node({
-    mode: 'standalone'
-  }),
-  integrations: [svelte()]
+	mode: 'standalone',
+  })
 });
