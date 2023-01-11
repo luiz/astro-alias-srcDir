@@ -3,7 +3,7 @@
   "compilerOptions": {
     "paths": {
       "@/*": [
-        "./src/main/*"
+        "./src/*"
       ]
     },
     "jsx": "preserve"
